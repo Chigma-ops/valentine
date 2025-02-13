@@ -7,6 +7,7 @@ const UseStateHook = () => {
   const [friendName] = useState('Chinguun'); 
   const [showName, setShowName] = useState(false); 
   const [showFriendName, setShowFriendName] = useState(false); 
+
   return (
     <div className="flex flex-col justify-center items-center h-screen w-full bg-gray-100">
       <button 
@@ -15,6 +16,8 @@ const UseStateHook = () => {
       >
         Sigma sigma
       </button>
+
+
       {showName && <p className="mt-4 text-xl text-black">{name}</p>}
       <button 
         onClick={() => setShowFriendName(prevShowFriendName => !prevShowFriendName)} 
@@ -22,6 +25,7 @@ const UseStateHook = () => {
       >
         Toggle Friend Name
       </button>
+
       {showFriendName && <p className="mt-4 text-xl text-black">{friendName}</p>}
     </div>
   );

@@ -37,13 +37,14 @@ const UseStateHook = () => {
         Return
       </button>
       {color !== " " && (
-        <button
-          className={`border py-4 px-6 text-white bg-${color}-700`}
-          onClick={() => setColor(color)}
-        >
-          {color.charAt(0).toUpperCase() + color.slice(1)}
-        </button>
-      )}
+  <button
+    className={`border py-4 px-6 text-white bg-${color}-700`}
+    onClick={() => setColor(color)}
+  >
+    {color}
+  </button>
+)}
+
       <p>
         {color === "red"
           ? "123"

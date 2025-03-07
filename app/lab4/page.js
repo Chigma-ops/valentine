@@ -86,7 +86,7 @@ const exampleData = [
         job: "Businessman",
         alive: "true",
         items:[
-            { id: 12, name: "vodka"},
+            { id: 12, name: "Real win"},
             { id: 13, name: "barca jersey"}
         ],
         height: 190,
@@ -131,8 +131,8 @@ const exampleData = [
         job: "Software Engineer",
         alive: "true",
         items:[
-            { id: 14, name: "bag"},
-            { id: 15, name: "phone"}
+            { id: 14, name: "IT engineer"},
+            { id: 15, name: "notebook"}
         ],
         height: 190,
         image:
@@ -153,6 +153,8 @@ const exampleData = [
         image:
         "https://media.gettyimages.com/id/1409368635/video/macro-video-small-green-frog-in-garden-on-a-leaf.jpg?s=640x640&k=20&c=beIdOpIWwACkKGS8RF91WPgGyxn91UJimW7adui_2rE="
     },
+    
+
 
     
 
@@ -162,7 +164,7 @@ export default function lab4() {
     const a = exampleData;
     console.log("length ->", exampleData.length);
     return (
-        <div className="p-5 grid grid-cols-4 justify-between gap-10">
+        <div className="p-10 grid grid-cols-4 gap-10">
         {exampleData.map((element) => (
             <div key={element.id} className="flex flex-col p-3 rounded-lg text-black shadow-md w-60 h-50 border-white border shadow-lg shadow-blue-500">
                 <img 

@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 const UseStateHook = () => {
     const [name, setName] = useState("");
-
+    
     return (
         <div className="flex justify-center items-center h-screen w-full bg-white">
             <p className="text-xl font-bold mb-2 text-black mr-10">Name:</p>
